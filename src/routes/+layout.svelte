@@ -1,8 +1,8 @@
 <script>
-    import "../app.css";
+  import "../app.css";
 
-    export let data;
-    const { healthCheckResponse } = data;
+  export let data;
+  const { healthCheckResponse } = data;
 </script>
 
 <p>API Status: {healthCheckResponse}</p>
