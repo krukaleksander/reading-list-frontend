@@ -1,4 +1,6 @@
 <script>
+    import "../app.css";
+
     export let data;
     const { healthCheckResponse } = data;
 </script>
