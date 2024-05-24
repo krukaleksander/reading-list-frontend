@@ -1,4 +1,4 @@
-<div class="flex items-center justify-center min-h-screen bg-gray-200">
+<div class="flex items-center justify-center min-h-screen">
   <div class="p-6 m-3 bg-white rounded shadow-md w-80">
     <h2 class="mb-4 text-xl font-bold text-center">Login</h2>
     <div class="mb-4">
@@ -36,6 +36,6 @@
 
 <style lang="postcss">
   :global(html) {
-    background-color: theme(colors.gray.200);
+    background-color: theme(colors.gray.300);
   }
 </style>
