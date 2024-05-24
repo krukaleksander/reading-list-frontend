@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  reading_list_frontend:
+    container_name: reading_list_frontend
+    build:
+      context: .
+      dockerfile: 'Dockerfile'
+    environment:
+      - VITE_API_URL
+      - VITE_FRONTEND_PORT
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+    restart: unless-stopped
