@@ -1,9 +1,9 @@
-<h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<h1 class="text-3xl font-bold text-center">
+    Provide credentials
+</h1>
   
   <style lang="postcss">
     :global(html) {
-      background-color: theme(colors.gray.100);
-    }
+      background-color: theme(colors.red.100);
+    } 
   </style>
