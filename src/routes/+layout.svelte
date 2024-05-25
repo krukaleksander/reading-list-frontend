@@ -19,4 +19,9 @@
   </p>
 </div>
 <slot />
-<slot />
+
+<style lang="postcss">
+  :global(html) {
+    background-color: theme(colors.gray.300);
+  }
+</style>
