@@ -1,58 +1,41 @@
-# create-svelte
+# READING LIST FRONTEND
 
-Everything you need to build a Svelte library, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+## My motivation
 
-Read more about creating a library [in the docs](https://kit.svelte.dev/docs/packaging).
+Throughout the day, I read a lot of material. Sometimes, at work, I don't have time to read it immediately. Therefore, I thought it would be beneficial to have an app that allows sharing articles between various devices. This is the frontend component of the app.
 
-## Creating a project
+I have no prior experience with Svelte, previously I was making some apps in React,
+so this is something totaly new to me.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Getting Started
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Before running the app, you need to create a `.env` file. You can copy the example file and fill in the values:
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+$ cp .env.example .env
 ```
 
-Everything inside `src/lib` is part of your library, everything inside `src/routes` can be used as a showcase or preview app.
+## Running the app
 
-## Building
-
-To build your library:
+Then you can run the app with the following commands:
 
 ```bash
-npm run package
+#build
+$ make dev-build
+#start
+$ make dev-start
 ```
 
-To create a production version of your showcase app:
+## Stop
 
 ```bash
-npm run build
+# stop
+$ make dev-down
 ```
 
-You can preview the production build with `npm run preview`.
+### All ENV list ###
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
-
-## Publishing
-
-Go into the `package.json` and give your package the desired name through the `"name"` option. Also consider adding a `"license"` field and point it to a `LICENSE` file which you can create from a template (one popular option is the [MIT license](https://opensource.org/license/mit/)).
-
-To publish your library to [npm](https://www.npmjs.com):
-
-```bash
-npm publish
-```
+| Variable            | Description                  | Type     | Required | Default |
+|---------------------|------------------------------|----------|----------|---------|
+| `VITE_API_URL`      | The API address.             | `string` | true     | -       |
+| `VITE_FRONTEND_PORT`| The port frontend will use.  | `number` | true     | -       |
